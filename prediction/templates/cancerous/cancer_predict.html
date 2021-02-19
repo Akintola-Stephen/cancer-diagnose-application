@@ -1,0 +1,59 @@
+<html lang="en">
+	<head>
+        {% load static %}
+		<meta charset="utf-8">
+		<title>Formicon-Flat Forms Pack</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="icons/styles.css">
+		<link rel="stylesheet" href="css/bootstrap-custom.css">
+		<link rel="stylesheet" href="css/registration-form.css">
+        <link rel="stylesheet" href="{% static 'css/cancer_prediction.css' %}">
+
+		<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600' rel='stylesheet' type='text/css'>
+		
+	</head>
+	<body>
+		<!-- Register Form -->
+		<div class="form-wrapper"> <!-- Form-wrapper only for positioning -->
+			<form action="#non" method="post" class="fcorn-register container">
+				<p class="register-info">Note: All fields are required.</p>
+				<div class="row">
+					<p class="col-md-6"><input type="text" placeholder="First Name" required></p>
+					<p class="col-md-6"><input type="text" placeholder="Last Name" required></p>
+				</div>
+				<p><input type="email" placeholder="Email Address" required>
+				   <span class="extern-type">We'll keep this private.</span>
+				</p>
+				<p><input type="date" placeholder="date of birth" required>
+					<span class="extern-type"></span>
+				</p>
+				
+          <div> 
+            <p class="col-xs-12"><form action="upload.php" method="post" enctype="multipart/form-data">
+            Upload a sample of breast image to be used for diagnosis:
+              <input type="file" name="fileToUpload" id="fileToUpload">
+           </p>
+				</div>
+          <br/>
+				<p class="register-submit"><input type="submit" value="Register Now"></p>
+			</form>
+    </div>
+    
+    
+	
+
+
+
+		<!-- This is a placeholder fallback for IE9 browser -->
+		<!-- For IE9 and below - placeholder fallback-->
+		<!--[if lt IE 10]>
+			<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+			<script src="jquery.placeholder.min.js"></script>
+			<script type="text/javascript">
+				$('input, textarea').placeholder();
+			</script>
+		<![endif]-->
+	</body>
+</html>
+
+
